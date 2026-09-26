@@ -16,3 +16,8 @@ class Assignment:
     due_date: str
     weight: float
     grade: float | None = None
+
+    @property
+    def is_graded(self)->bool :
+        return self.grade is not None
+    
