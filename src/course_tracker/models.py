@@ -1,5 +1,6 @@
 """Data models"""
 from dataclasses import dataclass
+from datetime import date
 
 @dataclass
 class Course:
@@ -18,6 +19,9 @@ class Assignment:
     grade: float | None = None
 
     @property
+    def is_overdue(self) -> bool:
+        return self.grade is None and date.fromisoformat(self.due_date) < date.today()
+
+    @property
     def is_graded(self)->bool :
         return self.grade is not None
-    
