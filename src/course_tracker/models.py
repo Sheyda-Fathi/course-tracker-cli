@@ -21,3 +21,7 @@ class Assignment:
     @property
     def is_overdue(self) -> bool:
         return self.grade is None and date.fromisoformat(self.due_date) < date.today()
+
+    @property
+    def is_graded(self)->bool :
+        return self.grade is not None
