@@ -1,6 +1,7 @@
 """Custom exceptions"""
 
-
+MIN_GRADE = 0
+MAX_GRADE = 20
 class TrackerError(Exception):
     """Base class """
 
@@ -21,7 +22,7 @@ class DuplicateCourseError(TrackerError):
 class InvalidGradeError(TrackerError):
     def __init__(self, grade: float) -> None:
         self.grade = grade
-        super().__init__(f"grade {grade} is not between 0 and 20")
+        super().__init__(f"grade {grade} is not between {MIN_GRADE} and {MAX_GRADE}")
 
 
 class AssignmentNotFoundError(TrackerError):
