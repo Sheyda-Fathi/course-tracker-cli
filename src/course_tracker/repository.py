@@ -58,7 +58,7 @@ class AssignmentRepository:
             return [Assignment(**dict(row)) for row in rows]
         
     def set_grade(self,assignment_id:int, grade:float)->None:
-        if grade <0 or grade>20 :
+        if not (0 <= grade <= 20):
             raise InvalidGradeError(grade)
         with get_connection(self._db_path) as conn:
             cursor = conn.execute("UPDATE assignments SET grade = ? WHERE id = ?", (grade,assignment_id),)
