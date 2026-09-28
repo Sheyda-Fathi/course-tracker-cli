@@ -16,13 +16,14 @@ main
 
 Each feature was developed on its own branch, reviewed through a Pull Request, and then merged into `main`.
 
-Three tags were used to mark the main project milestones:
+Four tags were used to mark the main project milestones:
 
 | Tag      | Milestone                                                     |
 | -------- | ------------------------------------------------------------- |
 | `v0.1.0` | Schema, `CourseRepository`, and course tests                  |
 | `v0.2.0` | Assignment repository, GPA calculation, and conflict practice |
 | `v1.0.0` | Full CLI, final tests, and documentation                      |
+| `v1.0.1` | Final documented version with completed project documentation |
 
 ## Conflict #1 — Merge Conflict
 

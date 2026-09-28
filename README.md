@@ -260,7 +260,9 @@ main
 └── feat/cli-and-tests
 ```
 
-Each feature was developed separately and then merged into `main` through a Pull Request. Milestones are marked with the tags `v0.1.0`, `v0.2.0`, and `v1.0.0`; see the [v1.0.0 release](https://github.com/Sheyda-Fathi/course-tracker-cli/releases/tag/v1.0.0).
+Each feature was developed separately and then merged into `main` through a Pull Request. Milestones are marked with the tags `v0.1.0`, `v0.2.0`, `v1.0.0`, and `v1.0.1`.
+
+The `v1.0.1` release is the final documented version of the project.
 
 During development, two Git conflicts were intentionally created and resolved:
 

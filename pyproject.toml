@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "course-tracker-cli"
-version = "0.1.0"
+version = "1.0.1"
 description = "CLI course and assignment tracker with SQLite"
 requires-python = ">=3.11"
 dependencies = []
